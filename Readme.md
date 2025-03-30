@@ -104,5 +104,3 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For questions or feedback, reach out to [Adiwanwade@gmail.com](mailto:adiwanwade@gmail.com) or open an issue on GitHub.
 
 ---
-
-This README provides a comprehensive guide for users and contributors. You can customize the links, demo URL, and contact information to match your actual setup. Let me know if you'd like to add more sections or details!
