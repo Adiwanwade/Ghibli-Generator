@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghibli Style Image Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        .container {
+            margin: 50px auto;
+            max-width: 600px;
+        }
+        img {
+            max-width: 100%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Ghibli Style Image Generator</h1>
+        <form method="POST">
+            <label for="prompt">Enter a description for your image:</label><br>
+            <textarea id="prompt" name="prompt" rows="4" cols="50" placeholder="e.g., A young adventurer in a lush forest"></textarea><br><br>
+            <button type="submit">Generate Image</button>
+        </form>
+        
+        {% if image_url %}
+            <h2>Your Ghibli-Style Image:</h2>
+            <img src="{{ image_url }}" alt="Generated Image">
+            <br><br>
+            <a href="/download"><button>Download Image</button></a>
+        {% endif %}
+    </div>
+</body>
+</html>
